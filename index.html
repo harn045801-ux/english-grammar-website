@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>English Grammar Learning Hub</title>
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--ink:#172033;--muted:#637086;--blue:#315ee8;--line:#e3e8f2;--soft:#edf2ff;--green:#16845b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Noto Sans Myanmar",sans-serif}
+header{background:linear-gradient(120deg,#1d3f9f,#5278f2);color:white;padding:34px 18px 28px}
+.wrap{max-width:1100px;margin:auto;padding:0 16px}h1{font-size:clamp(25px,4vw,38px);margin:0 0 8px}header p{margin:0;color:#e8edff}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}nav a{color:white;text-decoration:none;background:#ffffff20;padding:7px 12px;border-radius:20px;font-size:14px}
+main{display:grid;grid-template-columns:260px minmax(0,1fr);gap:20px;margin:24px auto}
+aside,.panel,.topic,.quiz{background:var(--card);border:1px solid var(--line);border-radius:16px}
+aside{padding:16px;height:max-content;position:sticky;top:12px}aside h3{margin:0 0 10px}aside a{display:block;color:#33415e;text-decoration:none;padding:8px 10px;border-radius:9px;font-size:14px}aside a:hover{background:var(--soft);color:var(--blue)}
+.content{min-width:0}.panel{padding:20px;margin-bottom:16px}.panel h2{margin:0 0 8px;font-size:23px}.muted{color:var(--muted)}.search{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;margin-top:12px}
+.topic{padding:20px;margin:0 0 14px;scroll-margin-top:14px}.topic h2{margin:0 0 4px;font-size:22px}.topic h3{font-size:17px;margin:18px 0 6px;color:#2446a8}
+.example{background:#f1f5ff;border-left:4px solid var(--blue);padding:10px 13px;border-radius:8px;margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px}th,td{padding:9px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#f4f6fb}
+.pill{display:inline-block;background:#eaf7f1;color:#126746;padding:3px 9px;border-radius:20px;font-size:12px}
+button{border:0;background:var(--blue);color:white;border-radius:9px;padding:10px 15px;font:inherit;cursor:pointer}button:hover{filter:brightness(.93)}.quiz{padding:18px;margin-top:14px}.quiz label{display:block;padding:7px 0}.result{font-weight:700;margin-top:10px}
+footer{text-align:center;color:var(--muted);padding:28px 16px}
+@media(max-width:760px){main{grid-template-columns:1fr}aside{position:static}aside .links{display:grid;grid-template-columns:1fr 1fr;gap:2px} .topic{padding:16px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<h1>English Grammar Learning Hub</h1>
+<p>အင်္ဂလိပ်သဒ္ဒါကို မြန်မာလိုရှင်းပြချက်၊ ဥပမာဝါကျများ၊ လေ့ကျင့်ခန်းများနဲ့ လေ့လာနိုင်မယ့်နေရာ</p>
+<nav><a href="#basics">အခြေခံ</a><a href="#tenses">Tenses</a><a href="#prepositions">Prepositions</a><a href="#connectors">Connectors</a><a href="#practice">Quiz</a></nav>
+</div></header>
+<main class="wrap">
+<aside><h3>သင်ခန်းစာများ</h3><input class="search" id="search" placeholder="သင်ခန်းစာရှာရန်..." aria-label="Search lessons"><div class="links" id="lessonLinks">
+<a href="#basics">1. Parts of Speech</a><a href="#sentences">2. Sentence Structure</a><a href="#tenses">3. Tenses</a><a href="#articles">4. Articles</a><a href="#prepositions">5. Prepositions</a><a href="#connectors">6. Connectors</a><a href="#modals">7. Modal Verbs</a><a href="#passive">8. Passive Voice</a><a href="#conditionals">9. Conditionals</a><a href="#clauses">10. Clauses</a><a href="#questions">11. Questions</a><a href="#advanced-map">12. Advanced Roadmap</a>
+<a href="#gerunds">13. Gerunds</a><a href="#reported">14. Reported Speech</a><a href="#reduced">15. Relative Clauses</a>
+<a href="#participle">16. Participle Clauses</a><a href="#mixed">17. Mixed Conditionals</a><a href="#inversion">18. Inversion</a>
+<a href="#cleft">19. Cleft Sentences</a><a href="#subjunctive">20. Subjunctive</a><a href="#advanced-modals">21. Modal Perfects</a>
+<a href="#discourse">22. Discourse Markers</a><a href="#phrasal">23. Phrasal Verbs</a><a href="#writing-style">24. Academic Style</a>
+<a href="#agreement">25. Agreement & Quantifiers</a><a href="#practice">26. Practice Quiz</a>
+</div></aside>
+<section class="content">
+<div class="panel"><h2>မင်္ဂလာပါ 👋</h2><p>ဒီ website မှာ English Grammar ကို အခြေခံမှစပြီး အဆင့်လိုက်လေ့လာနိုင်ပါတယ်။ ဘယ်ဘက်က သင်ခန်းစာကိုနှိပ်ပါ၊ ဒါမှမဟုတ် ရှာဖွေရေးအကွက်မှာ ခေါင်းစဉ်ရိုက်ရှာပါ။</p><p class="muted">အကြံပြုအစီအစဉ် — Parts of Speech → Sentence Structure → Tenses → Prepositions → Connectors → အခြားသဒ္ဒါများ။</p></div>
+
+<article class="topic" id="basics"><span class="pill">Lesson 01 · Basics</span><h2>Parts of Speech (စကားလုံးအမျိုးအစား ၈ မျိုး)</h2>
+<p>ဝါကျတစ်ကြောင်းထဲမှာ စကားလုံးတစ်လုံးချင်းစီက လုပ်ဆောင်တဲ့ အခန်းကဏ္ဍကို Parts of Speech လို့ခေါ်ပါတယ်။</p>
+<table><tr><th>အမျိုးအစား</th><th>အဓိပ္ပာယ်</th><th>ဥပမာ</th></tr>
+<tr><td>Noun (နာမ်)</td><td>လူ၊ နေရာ၊ အရာဝတ္ထု၊ အယူအဆ</td><td>teacher, school, book, love</td></tr>
+<tr><td>Pronoun (နာမ်စား)</td><td>နာမ်အစားသုံး</td><td>I, you, he, she, they</td></tr>
+<tr><td>Verb (ကြိယာ)</td><td>လုပ်ဆောင်မှု/ဖြစ်တည်မှု</td><td>go, eat, study, be</td></tr>
+<tr><td>Adjective (နာမဝိသေသန)</td><td>နာမ်ကိုဖော်ပြ</td><td>beautiful, tall, clever</td></tr>
+<tr><td>Adverb (ကြိယာဝိသေသန)</td><td>ကြိယာ၊ adjective စသည်ကိုဖော်ပြ</td><td>quickly, very, yesterday</td></tr>
+<tr><td>Preposition (ဝိဘတ်)</td><td>အချိန်၊ နေရာ၊ ဆက်နွယ်မှုကိုပြ</td><td>in, on, at, under</td></tr>
+<tr><td>Conjunction (စကားဆက်)</td><td>စကားလုံး/ဝါကျများကိုဆက်</td><td>and, but, because</td></tr>
+<tr><td>Interjection (အာမေဋိတ်)</td><td>ခံစားချက်ကိုဖော်ပြ</td><td>Wow!, Oh!, Ouch!</td></tr></table>
+<div class="example"><b>Example:</b> She (pronoun) reads (verb) an interesting (adjective) book (noun) quietly (adverb).</div>
+</article>
+
+<article class="topic" id="sentences"><span class="pill">Lesson 02</span><h2>Sentence Structure (ဝါကျတည်ဆောက်ပုံ)</h2>
+<p>အခြေခံအင်္ဂလိပ်ဝါကျမှာ Subject (ပြုသူ/အကြောင်းအရာ) + Verb (ကြိယာ) + Object (ကံပုဒ်) ပုံစံကို မကြာခဏတွေ့ရပါတယ်။</p>
+<table><tr><th>ပုံစံ</th><th>ဥပမာ</th><th>အဓိပ္ပာယ်</th></tr><tr><td>S + V</td><td>Birds fly.</td><td>ငှက်တွေ ပျံတယ်။</td></tr><tr><td>S + V + O</td><td>I like music.</td><td>ကျွန်တော်/ကျွန်မ သီချင်းကြိုက်တယ်။</td></tr><tr><td>S + be + adjective</td><td>She is happy.</td><td>သူမ ပျော်နေတယ်။</td></tr><tr><td>S + V + place + time</td><td>He studies at home every night.</td><td>သူ ညတိုင်း အိမ်မှာစာလေ့လာတယ်။</td></tr></table>
+<p><b>မှတ်ရန်:</b> English ဝါကျမှာ ပုံမှန်အားဖြင့် Subject ကို မချန်ထားပါ။ “Am happy” မဟုတ်ဘဲ “I am happy” လို့ရေးပါ။</p></article>
+
+<article class="topic" id="tenses"><span class="pill">Lesson 03 · အရေးကြီးဆုံး</span><h2>12 English Tenses (အချိန်ပြပုဒ်/ကာလပြပုံ)</h2>
+<p>Tense ဆိုတာ လုပ်ရပ်တစ်ခု ဘယ်အချိန်မှာဖြစ်တယ်၊ ဘယ်လိုဆက်လက်ဖြစ်နေတယ်ဆိုတာ ဖော်ပြတဲ့ verb ပုံစံဖြစ်ပါတယ်။</p>
+<h3>Present (ပစ္စုပ္ပန်)</h3>
+<table><tr><th>Tense</th><th>ပုံစံ</th><th>အသုံးပြုမှုနှင့် ဥပမာ</th></tr>
+<tr><td>Present Simple</td><td>S + V1(s/es)</td><td>အလေ့အကျင့်/အမှန်တရား။ <b>She works</b> every day.</td></tr>
+<tr><td>Present Continuous</td><td>S + am/is/are + V-ing</td><td>ယခုလုပ်နေဆဲ။ <b>I am studying</b> now.</td></tr>
+<tr><td>Present Perfect</td><td>S + have/has + V3</td><td>အတိတ်ကစပြီး ယခုနဲ့ဆက်စပ်။ <b>He has finished</b> his work.</td></tr>
+<tr><td>Present Perfect Continuous</td><td>S + have/has been + V-ing</td><td>အတိတ်ကစပြီး ယခုထိကြာချိန်ကိုအလေးပေး။ <b>They have been waiting</b> for an hour.</td></tr></table>
+<h3>Past (အတိတ်)</h3>
+<table><tr><th>Tense</th><th>ပုံစံ</th><th>အသုံးပြုမှုနှင့် ဥပမာ</th></tr>
+<tr><td>Past Simple</td><td>S + V2</td><td>ပြီးဆုံးခဲ့သောအတိတ်။ <b>We visited</b> Bagan last year.</td></tr>
+<tr><td>Past Continuous</td><td>S + was/were + V-ing</td><td>အတိတ်ကာလတစ်ချိန်တွင် လုပ်နေဆဲ။ <b>I was cooking</b> at 7.</td></tr>
+<tr><td>Past Perfect</td><td>S + had + V3</td><td>အတိတ်ဖြစ်ရပ်တစ်ခုမတိုင်မီ ပြီးခဲ့။ <b>She had left</b> before I arrived.</td></tr>
+<tr><td>Past Perfect Continuous</td><td>S + had been + V-ing</td><td>အတိတ်အချိန်တစ်ခုမတိုင်မီ ကြာကြာလုပ်နေခဲ့။ <b>He had been working</b> for hours.</td></tr></table>
+<h3>Future (အနာဂတ်)</h3>
+<table><tr><th>Tense</th><th>ပုံစံ</th><th>အသုံးပြုမှုနှင့် ဥပမာ</th></tr>
+<tr><td>Future Simple</td><td>S + will + V1</td><td>အနာဂတ်ဆုံးဖြတ်ချက်/ခန့်မှန်းချက်။ <b>I will call</b> you.</td></tr>
+<tr><td>Future Continuous</td><td>S + will be + V-ing</td><td>အနာဂတ်အချိန်တစ်ခုတွင် လုပ်နေမည်။ <b>At 8, I will be sleeping.</b></td></tr>
+<tr><td>Future Perfect</td><td>S + will have + V3</td><td>အနာဂတ်အချိန်မတိုင်မီ ပြီးပြီးဖြစ်မည်။ <b>By Friday, I will have finished</b>.</td></tr>
+<tr><td>Future Perfect Continuous</td><td>S + will have been + V-ing</td><td>အနာဂတ်အချိန်တစ်ခုအထိ ကြာချိန်ကိုအလေးပေး။ <b>By June, she will have been teaching</b> for ten years.</td></tr></table>
+<h3>အများဆုံးတွေ့ရတဲ့ Time Expressions</h3>
+<table><tr><th>ကာလ</th><th>စကားလုံးများ</th></tr><tr><td>Present Simple</td><td>always, usually, often, sometimes, every day</td></tr><tr><td>Present Continuous</td><td>now, right now, at the moment</td></tr><tr><td>Present Perfect</td><td>already, just, yet, ever, never, since, for</td></tr><tr><td>Past Simple</td><td>yesterday, last week, ago, in 2020</td></tr><tr><td>Future</td><td>tomorrow, next week, soon, in the future</td></tr></table>
+<p class="muted">သတိပြုရန် — Time expression တစ်ခုတည်းနဲ့ tense ကို အမြဲမဆုံးဖြတ်နိုင်ပါ။ ဝါကျရဲ့အဓိပ္ပာယ်နဲ့ အခြေအနေကိုပါကြည့်ပါ။</p></article>
+
+<article class="topic" id="articles"><span class="pill">Lesson 04</span><h2>Articles: a, an, the</h2>
+<ul><li><b>a</b> — အသံထွက် consonant sound နဲ့စတဲ့ ရေတွက်လို့ရသော singular noun မတိုင်မီ။ <i>a book, a university</i></li><li><b>an</b> — vowel sound နဲ့စတဲ့ noun မတိုင်မီ။ <i>an apple, an hour</i></li><li><b>the</b> — ပြောသူ/နားထောင်သူ နှစ်ဦးစလုံးသိပြီးသား သို့မဟုတ် သီးခြားသတ်မှတ်ထားသောအရာ။ <i>the sun, the book on the table</i></li></ul>
+<div class="example">I saw <b>a</b> dog. <b>The</b> dog was black. — ခွေးတစ်ကောင်ကိုတွေ့တယ်။ အဲဒီခွေးက အနက်ရောင်ပါ။</div></article>
+
+<article class="topic" id="prepositions"><span class="pill">Lesson 05 · အချိန်/နေရာပြပုဒ်</span><h2>Prepositions of Time & Place</h2>
+<h3>အလွယ်မှတ်နည်း — IN / ON / AT</h3>
+<div class="example"><b>အချိန်အတွက် မှတ်ရန်:</b><br>
+IN = အချိန်အကျယ်ကြီး (လ၊ နှစ်၊ ရာသီ၊ နေ့အပိုင်း) → <b>in</b> 2026, <b>in</b> July, <b>in</b> the morning<br>
+ON = နေ့/ရက်တိတိကျကျ → <b>on</b> Monday, <b>on</b> 12 June, <b>on</b> my birthday<br>
+AT = နာရီ/အချိန်အမှတ်တိတိကျကျ → <b>at</b> 7:30, <b>at</b> noon, <b>at</b> midnight
+</div>
+<div class="example"><b>နေရာအတွက် မှတ်ရန်:</b><br>
+IN = အတွင်းထဲ / နယ်မြေအတွင်း → <b>in</b> the room, <b>in</b> Thailand<br>
+ON = မျက်နှာပြင်ပေါ် / ထိတွေ့နေ → <b>on</b> the table, <b>on</b> the wall<br>
+AT = တည်နေရာအမှတ် / နေရာတစ်ခုကို point အဖြစ်မြင် → <b>at</b> the bus stop, <b>at</b> the entrance
+</div>
+<p><b>ပုံရိပ်နဲ့မှတ်ပါ:</b> IN = box အတွင်း၊ ON = မျက်နှာပြင်ပေါ်၊ AT = မြေပုံပေါ်က pin တစ်ခု။ အချိန်မှာလည်း IN ကာလအကျယ်၊ ON နေ့ရက်၊ AT နာရီအမှတ်လို့ စဉ်းစားပါ။</p>
+<h3>Time — အချိန်ပြပုဒ်</h3>
+<table><tr><th>Preposition</th><th>အသုံးပြုရာ</th><th>ဥပမာ</th></tr><tr><td><b>at</b></td><td>နာရီအချိန်၊ တိကျသောအချိန်</td><td>at 7 o'clock, at noon, at night</td></tr><tr><td><b>on</b></td><td>နေ့ရက်၊ ရက်စွဲ</td><td>on Monday, on 5 May, on my birthday</td></tr><tr><td><b>in</b></td><td>လ၊ နှစ်၊ ရာသီ၊ နေ့အပိုင်း</td><td>in July, in 2026, in winter, in the morning</td></tr><tr><td><b>since</b></td><td>စတင်ခဲ့သောအချိန်မှတ်</td><td>since 2020, since Monday</td></tr><tr><td><b>for</b></td><td>ကြာချိန်</td><td>for two hours, for a week</td></tr><tr><td><b>by</b></td><td>နောက်ဆုံးသတ်မှတ်ချိန်</td><td>Finish it by Friday.</td></tr><tr><td><b>during</b></td><td>ကာလတစ်ခုအတွင်း</td><td>during the lesson</td></tr><tr><td><b>until</b></td><td>အချိန်တစ်ခုအထိ</td><td>Wait until 6 p.m.</td></tr></table>
+<div class="example">I wake up <b>at</b> 6 <b>on</b> weekdays. I was born <b>in</b> 2002.</div>
+<h3>Place — နေရာပြပုဒ်</h3>
+<table><tr><th>Preposition</th><th>အသုံးပြုရာ</th><th>ဥပမာ</th></tr><tr><td><b>in</b></td><td>အတွင်း၊ မြို့/နိုင်ငံ၊ အကျယ်အဝန်း</td><td>in the room, in Thailand</td></tr><tr><td><b>on</b></td><td>မျက်နှာပြင်ပေါ်၊ လမ်းအမည်အချို့</td><td>on the table, on the wall</td></tr><tr><td><b>at</b></td><td>တိကျသောနေရာ/အမှတ်</td><td>at the bus stop, at school</td></tr><tr><td><b>under</b></td><td>အောက်မှာ</td><td>under the chair</td></tr><tr><td><b>above / below</b></td><td>အပေါ်ဘက် / အောက်ဘက်</td><td>above the door, below sea level</td></tr><tr><td><b>between</b></td><td>နှစ်ခုကြား</td><td>between the bank and the shop</td></tr><tr><td><b>among</b></td><td>အများအကြား</td><td>among friends</td></tr><tr><td><b>behind / in front of</b></td><td>နောက်မှာ / ရှေ့မှာ</td><td>behind the house, in front of me</td></tr><tr><td><b>next to / near</b></td><td>ဘေးမှာ / အနီးမှာ</td><td>next to the hospital, near my home</td></tr><tr><td><b>opposite</b></td><td>မျက်နှာချင်းဆိုင်</td><td>opposite the school</td></tr></table>
+<div class="example">The keys are <b>on</b> the table. My sister lives <b>in</b> Bangkok. I am waiting <b>at</b> the station.</div>
+<h3>အသေးစိတ်သတိပြုရန် — ခြွင်းချက်များ</h3>
+<ul>
+<li><b>at night</b> လို့သုံးပေမယ့် <b>in the morning / in the afternoon / in the evening</b> လို့သုံးပါတယ်။</li>
+<li><b>on the weekend</b> (အမေရိကန်အသုံး)၊ <b>at the weekend</b> (ဗြိတိန်အသုံး) နှစ်မျိုးလုံးတွေ့ရပါတယ်။</li>
+<li><b>at home, at work, at school</b> — နေရာကို ယေဘုယျအခြေအနေ/အမှတ်အဖြစ်ပြောတာပါ။</li>
+<li><b>in bed</b> = အိပ်ရာထဲမှာ၊ <b>on the bed</b> = အိပ်ရာမျက်နှာပြင်ပေါ်မှာ။</li>
+<li><b>in a car / in a taxi</b>၊ ဒါပေမယ့် <b>on a bus / on a train / on a plane</b> လို့ပုံမှန်သုံးပါတယ်။</li>
+<li><b>arrive in</b> a country/city; <b>arrive at</b> a building/station/event.</li>
+</ul>
+<h3>မှားလွယ်တဲ့ဝါကျများ</h3>
+<table><tr><th>မမှန်</th><th>မှန်</th><th>မှတ်ရန်</th></tr>
+<tr><td>in Monday</td><td><b>on</b> Monday</td><td>နေ့ရက် = ON</td></tr>
+<tr><td>at 2025</td><td><b>in</b> 2025</td><td>နှစ် = IN</td></tr>
+<tr><td>on 8 o'clock</td><td><b>at</b> 8 o'clock</td><td>နာရီ = AT</td></tr>
+<tr><td>in the table</td><td><b>on</b> the table</td><td>မျက်နှာပြင်ပေါ် = ON</td></tr></table>
+<h3>ကိုယ်တိုင်လေ့ကျင့်ရန်</h3>
+<p>Fill in the blanks: (1) ___ Friday (2) ___ 9:00 a.m. (3) ___ December (4) ___ the kitchen (5) ___ the wall. အဖြေ — on, at, in, in, on။</p>
+</article>
+
+<article class="topic" id="connectors"><span class="pill">Lesson 06 · စကားဆက်များ</span><h2>Conjunctions & Linking Words (စကားဆက်များ)</h2>
+<p>စကားလုံး၊ စကားစုနဲ့ ဝါကျတွေကို အဓိပ္ပာယ်ဆက်စပ်အောင် ချိတ်ဆက်ပေးပါတယ်။</p>
+<table><tr><th>အမျိုးအစား</th><th>စကားဆက်</th><th>ဥပမာ</th></tr><tr><td>ထပ်ပေါင်း</td><td>and, also, moreover, furthermore</td><td>She is kind <b>and</b> helpful.</td></tr><tr><td>ဆန့်ကျင်</td><td>but, although, however, whereas</td><td>It was raining, <b>but</b> we went out.</td></tr><tr><td>အကြောင်းရင်း</td><td>because, since, as</td><td>I stayed home <b>because</b> I was sick.</td></tr><tr><td>ရလဒ်</td><td>so, therefore, as a result</td><td>It was late, <b>so</b> we left.</td></tr><tr><td>ဥပမာပေး</td><td>for example, for instance, such as</td><td>I like fruit, <b>such as</b> mangoes.</td></tr><tr><td>အစီအစဉ်</td><td>first, next, then, finally</td><td><b>First</b>, wash your hands. <b>Then</b>, cook.</td></tr><tr><td>အခြေအနေ</td><td>if, unless, provided that</td><td><b>If</b> it rains, I will stay home.</td></tr><tr><td>အချိန်အစဉ်</td><td>when, while, before, after, until</td><td>Call me <b>when</b> you arrive.</td></tr><tr><td>ရွေးချယ်မှု</td><td>or, either...or, neither...nor</td><td>You can have tea <b>or</b> coffee.</td></tr><tr><td>ရည်ရွယ်ချက်</td><td>so that, in order to</td><td>I study <b>so that</b> I can improve.</td></tr></table>
+<h3>သတိထားရမည့်အချက်</h3><div class="example">Because I was tired, I went to bed early. (မှန်)<br>I was tired, so I went to bed early. (မှန်)<br><b>Because</b> I was tired, <b>so</b> I went to bed early. (ပုံမှန် standard English မှာ နှစ်ခုကို ဒီလိုတွဲမသုံးပါ)</div>
+</article>
+
+<article class="topic" id="modals"><span class="pill">Lesson 07</span><h2>Modal Verbs</h2>
+<p>Modal verb နောက်မှာ ပုံမှန်အားဖြင့် verb အခြေခံပုံစံ (V1) လိုက်ပါတယ်။</p>
+<table><tr><th>Modal</th><th>အသုံး</th><th>ဥပမာ</th></tr><tr><td>can / could</td><td>တတ်နိုင်ခြင်း၊ ယဉ်ကျေးစွာတောင်းဆိုခြင်း</td><td>I can swim. Could you help me?</td></tr><tr><td>may / might</td><td>ဖြစ်နိုင်ခြင်း၊ ခွင့်တောင်းခြင်း</td><td>It may rain. May I come in?</td></tr><tr><td>must</td><td>မဖြစ်မနေလိုအပ်</td><td>You must wear a seat belt.</td></tr><tr><td>should</td><td>အကြံပြုချက်</td><td>You should get some rest.</td></tr><tr><td>have to</td><td>တာဝန်/စည်းမျဉ်းကြောင့် လုပ်ရခြင်း</td><td>I have to work tomorrow.</td></tr><tr><td>would</td><td>ယဉ်ကျေးသောတောင်းဆိုမှု/စိတ်ကူးအခြေအနေ</td><td>Would you like some tea?</td></tr></table>
+<p><b>ပုံစံ:</b> Subject + modal + V1. “She can sings” မဟုတ်ဘဲ “She can sing” ဖြစ်ပါတယ်။</p></article>
+
+<article class="topic" id="passive"><span class="pill">Lesson 08</span><h2>Active & Passive Voice</h2>
+<p><b>Active:</b> လုပ်ဆောင်သူကို အလေးပေး။ <b>Passive:</b> လုပ်ဆောင်မှုခံရသူ/အရာကို အလေးပေး။</p>
+<div class="example">Active: The chef cooks the meal.<br>Passive: The meal <b>is cooked</b> by the chef.</div>
+<p><b>အခြေခံပုံစံ:</b> Object + be (tense အလိုက်ပြောင်း) + V3 (+ by + doer)</p>
+<table><tr><th>Tense</th><th>Passive form</th><th>ဥပမာ</th></tr><tr><td>Present Simple</td><td>am/is/are + V3</td><td>English is spoken here.</td></tr><tr><td>Past Simple</td><td>was/were + V3</td><td>The window was broken.</td></tr><tr><td>Future Simple</td><td>will be + V3</td><td>The work will be finished tomorrow.</td></tr><tr><td>Present Perfect</td><td>has/have been + V3</td><td>The room has been cleaned.</td></tr></table></article>
+
+<article class="topic" id="conditionals"><span class="pill">Lesson 09</span><h2>Conditionals (If ဝါကျများ)</h2>
+<table><tr><th>အမျိုးအစား</th><th>ပုံစံ</th><th>ဥပမာ / အဓိပ္ပာယ်</th></tr><tr><td>Zero</td><td>If + present, present</td><td>If you heat ice, it melts. (အမှန်တရား)</td></tr><tr><td>First</td><td>If + present, will + V1</td><td>If it rains, I will stay home. (ဖြစ်နိုင်သောအနာဂတ်)</td></tr><tr><td>Second</td><td>If + past, would + V1</td><td>If I had more time, I would travel. (လက်ရှိမမှန်/စိတ်ကူး)</td></tr><tr><td>Third</td><td>If + had + V3, would have + V3</td><td>If I had studied, I would have passed. (မပြောင်းလဲနိုင်တော့သောအတိတ်)</td></tr></table>
+<p>မှတ်ချက် — First Conditional မှာ if-clause ထဲကို ပုံမှန်အားဖြင့် will မထည့်ပါ။</p></article>
+
+<article class="topic" id="clauses"><span class="pill">Lesson 10</span><h2>Clauses & Relative Pronouns</h2>
+<p><b>Clause</b> ဆိုတာ subject နဲ့ verb ပါဝင်တဲ့ စကားစုဖြစ်ပါတယ်။ Independent clause က တစ်ခုတည်းနဲ့ ဝါကျဖြစ်နိုင်ပြီး dependent clause က အခြား clause ကိုလိုအပ်ပါတယ်။</p>
+<div class="example">I stayed home <b>because I was sick</b>. — “I stayed home” က independent clause၊ “because I was sick” က dependent clause ဖြစ်ပါတယ်။</div>
+<table><tr><th>Relative word</th><th>အသုံး</th><th>ဥပမာ</th></tr><tr><td>who</td><td>လူ</td><td>The woman <b>who</b> called me is my aunt.</td></tr><tr><td>which</td><td>အရာ/တိရစ္ဆာန်</td><td>The book <b>which</b> I bought is useful.</td></tr><tr><td>that</td><td>လူ/အရာ (အချို့ relative clauses)</td><td>The phone <b>that</b> I use is new.</td></tr><tr><td>whose</td><td>ပိုင်ဆိုင်မှု</td><td>The boy <b>whose</b> bike was lost is sad.</td></tr><tr><td>where</td><td>နေရာ</td><td>This is the café <b>where</b> we met.</td></tr><tr><td>when</td><td>အချိန်</td><td>I remember the day <b>when</b> we met.</td></tr></table></article>
+
+<article class="topic" id="questions"><span class="pill">Lesson 11</span><h2>Questions & Negatives</h2>
+<h3>Yes/No Questions</h3><div class="example">You are ready. → <b>Are</b> you ready?<br>She likes tea. → <b>Does</b> she like tea?<br>They went home. → <b>Did</b> they go home?</div>
+<h3>Wh- Questions</h3>
+<table><tr><th>စကားလုံး</th><th>မေးမြန်းရာ</th><th>ဥပမာ</th></tr><tr><td>What</td><td>ဘာ</td><td>What is your name?</td></tr><tr><td>Where</td><td>ဘယ်နေရာ</td><td>Where do you live?</td></tr><tr><td>When</td><td>ဘယ်အချိန်</td><td>When does class start?</td></tr><tr><td>Why</td><td>ဘာကြောင့်</td><td>Why are you late?</td></tr><tr><td>Who</td><td>ဘယ်သူ</td><td>Who is your teacher?</td></tr><tr><td>How</td><td>ဘယ်လို/ဘယ်လောက်</td><td>How do you feel?</td></tr></table>
+<p><b>Negative:</b> be + not (isn't/aren't), do/does/did + not + V1 (don't/doesn't/didn't). ဥပမာ — He isn't busy. / I don't understand. / She didn't come.</p></article>
+
+
+<article class="topic" id="advanced-map"><span class="pill">Advanced Roadmap · B2–C1</span><h2>Advanced Grammar — အဆင့်မြင့်သင်ခန်းစာများ</h2>
+<p>အောက်ပါသင်ခန်းစာများကို Intermediate ပြီးနောက် အစဉ်လိုက်လေ့လာပါ။ အဆင့်မြင့် grammar ဆိုတာ ရှုပ်ထွေးတဲ့ဝါကျတည်ဆောက်ပုံ၊ အဓိပ္ပာယ်ကွဲပြားမှုနဲ့ formal/informal အသုံးအနှုန်းတွေကို တိတိကျကျသုံးနိုင်ခြင်းဖြစ်ပါတယ်။</p>
+<table><tr><th>အဆင့်</th><th>သင်ခန်းစာ</th><th>လေ့လာရမည့်အကြောင်းအရာ</th></tr>
+<tr><td>B1–B2</td><td>Gerunds & Infinitives</td><td>V-ing / to + V1 ကို ဘယ်အချိန်သုံးမလဲ</td></tr>
+<tr><td>B1–B2</td><td>Reported Speech</td><td>တစ်ပါးသူပြောစကားကို ပြန်ပြောခြင်း</td></tr>
+<tr><td>B1–B2</td><td>Advanced Passive</td><td>အမျိုးမျိုးသော tense နှင့် reporting passive</td></tr>
+<tr><td>B2</td><td>Relative & Reduced Clauses</td><td>ဝါကျရှည်များကို သဘာဝကျကျချိတ်ဆက်ခြင်း</td></tr>
+<tr><td>B2</td><td>Participle Clauses</td><td>V-ing / V3 ဖြင့် clause ချုံ့ခြင်း</td></tr>
+<tr><td>B2</td><td>Advanced Conditionals</td><td>Mixed conditionals, unless, provided that</td></tr>
+<tr><td>B2</td><td>Wish / If only</td><td>နောင်တ၊ ဆန္ဒ၊ မဖြစ်နိုင်သည့်အခြေအနေ</td></tr>
+<tr><td>B2–C1</td><td>Inversion & Emphasis</td><td>ဝါကျအစီအစဉ်ပြောင်းပြီး အလေးပေးခြင်း</td></tr>
+<tr><td>B2–C1</td><td>Cleft Sentences</td><td>It is/was...that; What...is...</td></tr>
+<tr><td>B2–C1</td><td>Subjunctive</td><td>အကြံပြုချက်၊ တောင်းဆိုချက်၊ formal structure</td></tr>
+<tr><td>B2–C1</td><td>Advanced Modal Meaning</td><td>must have, might have, should have</td></tr>
+<tr><td>B2–C1</td><td>Discourse Markers</td><td>nevertheless, whereas, consequently စသည်</td></tr>
+<tr><td>B2–C1</td><td>Collocations & Phrasal Verbs</td><td>သဘာဝကျသော စကားတွဲများနှင့် phrasal verbs</td></tr>
+<tr><td>B2–C1</td><td>Register & Academic Writing</td><td>formal/informal style, hedging, nominalisation</td></tr>
+</table></article>
+
+<article class="topic" id="gerunds"><span class="pill">Advanced 01 · B1–B2</span><h2>Gerunds & Infinitives</h2>
+<p><b>Gerund</b> ဆိုတာ verb + ing ကို နာမ်လိုသုံးတာဖြစ်ပြီး <b>Infinitive</b> ဆိုတာ to + V1 ဖြစ်ပါတယ်။ ဘယ် verb နောက်မှာ ဘယ်ပုံစံလိုက်ရမလဲဆိုတာ မှတ်ထားဖို့လိုပါတယ်။</p>
+<table><tr><th>ပုံစံ</th><th>နောက်မှာလိုက်သောစကားလုံး</th><th>ဥပမာ</th></tr>
+<tr><td>Verb + V-ing</td><td>enjoy, avoid, finish, suggest, mind, consider</td><td>I enjoy <b>reading</b>. / She avoided <b>answering</b>.</td></tr>
+<tr><td>Verb + to V1</td><td>want, decide, hope, plan, promise, refuse</td><td>They decided <b>to leave</b>.</td></tr>
+<tr><td>Verb + object + to V1</td><td>ask, tell, advise, encourage, want</td><td>He told me <b>to wait</b>.</td></tr>
+<tr><td>Preposition + V-ing</td><td>interested in, good at, look forward to</td><td>I look forward to <b>meeting</b> you.</td></tr></table>
+<h3>အဓိပ္ပာယ်ပြောင်းသွားသော verb များ</h3>
+<div class="example"><b>stop smoking</b> = ဆေးလိပ်သောက်တာကို ရပ်လိုက်တယ်။<br><b>stop to smoke</b> = ဆေးလိပ်သောက်ဖို့ တခြားလုပ်နေတာကို ခဏရပ်တယ်။<br><b>remember locking</b> the door = သော့ခတ်ခဲ့တာကို မှတ်မိတယ်။<br><b>remember to lock</b> the door = သော့ခတ်ဖို့ မမေ့နဲ့။</div>
+<p><b>မှတ်နည်း:</b> enjoy/avoid/finish တို့နောက် V-ing; want/decide/hope တို့နောက် to + V1။ စာရင်းနဲ့ ဥပမာတွဲမှတ်ပါ။</p></article>
+
+<article class="topic" id="reported"><span class="pill">Advanced 02 · B1–B2</span><h2>Reported Speech (Indirect Speech)</h2>
+<p>တစ်ယောက်ယောက်ပြောခဲ့တဲ့စကားကို quotation mark မသုံးဘဲ ပြန်ပြောတာဖြစ်ပါတယ်။ Reporting verb ကို past (said/told) သုံးတဲ့အခါ tense နောက်ဆုတ်တတ်ပါတယ်။</p>
+<table><tr><th>Direct Speech</th><th>Reported Speech</th></tr>
+<tr><td>“I am tired.”</td><td>She said (that) she <b>was</b> tired.</td></tr>
+<tr><td>“I have finished.”</td><td>He said he <b>had finished</b>.</td></tr>
+<tr><td>“I will call you.”</td><td>She said she <b>would</b> call me.</td></tr>
+<tr><td>“I can swim.”</td><td>He said he <b>could</b> swim.</td></tr></table>
+<p><b>Pronoun နဲ့ အချိန်/နေရာစကားလုံး</b> တွေလည်း အခြေအနေအလိုက် ပြောင်းနိုင်ပါတယ်။ today → that day; tomorrow → the next day; yesterday → the day before; here → there; this → that။</p>
+<div class="example">Direct: “Where do you live?”<br>Reported: She asked me <b>where I lived</b>. (မေးခွန်းပုံစံအတိုင်း subject/verb ပြောင်းပြန်မထားပါ)</div>
+<p>အမြဲ tense ပြောင်းရတာမဟုတ်ပါ။ အခုထိမှန်ကန်နေတဲ့အချက်အလက် သို့မဟုတ် reporting verb ကို present သုံးထားလျှင် tense မပြောင်းနိုင်ပါ။</p></article>
+
+<article class="topic" id="reduced"><span class="pill">Advanced 03 · B2</span><h2>Relative Clauses & Reduced Relative Clauses</h2>
+<p>Relative clause က noun ကို ပိုမိုရှင်းပြပါတယ်။ Defining clause က ဘယ်သူ/ဘယ်အရာကိုဆိုလိုကြောင်း သတ်မှတ်ပေးပြီး comma မသုံးပါ။ Non-defining clause က ထပ်ဆောင်းအချက်အလက်ပေးပြီး comma သုံးပါတယ်။</p>
+<div class="example">Defining: The student <b>who won the prize</b> is my friend.<br>Non-defining: My brother, <b>who lives in Chiang Mai</b>, is a teacher.</div>
+<p><b>Reduced relative clause</b> မှာ အဓိပ္ပာယ်မပျက်ဘဲ relative pronoun နဲ့ be verb တချို့ကို ချုံ့နိုင်ပါတယ်။</p>
+<div class="example">The man <b>who is standing</b> there → The man <b>standing</b> there.<br>The book <b>that was written</b> by her → The book <b>written</b> by her.</div>
+<p>သတိ — လူ/အရာကို ဖော်ပြတဲ့ reduced clause ရဲ့ subject ဟာ အဓိကဝါကျနဲ့ ကိုက်ညီရပါမယ်။</p></article>
+
+<article class="topic" id="participle"><span class="pill">Advanced 04 · B2</span><h2>Participle Clauses</h2>
+<p>ဝါကျနှစ်ခုမှာ subject တူပြီး အချိန်/အကြောင်းရင်းဆက်စပ်မှုရှိရင် participle clause နဲ့ ချုံ့ရေးနိုင်ပါတယ်။</p>
+<table><tr><th>ပုံစံ</th><th>အဓိပ္ပာယ်</th><th>ဥပမာ</th></tr>
+<tr><td>V-ing</td><td>တစ်ပြိုင်နက်ဖြစ်မှု/active</td><td><b>Walking</b> home, I met a friend.</td></tr>
+<tr><td>Having + V3</td><td>အရင်ပြီးဆုံးမှု</td><td><b>Having finished</b> work, she went home.</td></tr>
+<tr><td>V3</td><td>Passive meaning</td><td><b>Built</b> in 1900, the house is very old.</td></tr>
+</table>
+<p><b>Dangling modifier သတိ:</b> “Walking to school, the rain started” ဆိုရင် မိုးက လမ်းလျှောက်သလိုဖြစ်နေတဲ့ အဓိပ္ပာယ်လွဲနိုင်ပါတယ်။ “Walking to school, I saw the rain start” လို့ရေးပါ။</p></article>
+
+<article class="topic" id="mixed"><span class="pill">Advanced 05 · B2</span><h2>Mixed Conditionals, Wish & If only</h2>
+<h3>Mixed Conditionals</h3>
+<div class="example">If I <b>had studied</b> medicine, I <b>would be</b> a doctor now. — အတိတ်က မလုပ်ခဲ့တာကြောင့် လက်ရှိအခြေအနေကွာခြားနေတယ်။<br>If I <b>were</b> more careful, I <b>wouldn't have made</b> that mistake. — လက်ရှိအကျင့်ကြောင့် အတိတ်မှာ အမှားဖြစ်ခဲ့တယ်။</div>
+<h3>Wish / If only</h3>
+<table><tr><th>ပုံစံ</th><th>အသုံး</th><th>ဥပမာ</th></tr><tr><td>wish + past simple</td><td>လက်ရှိအခြေအနေကို မကျေနပ်/မမှန်</td><td>I wish I <b>knew</b> the answer.</td></tr><tr><td>wish + past perfect</td><td>အတိတ်နောင်တ</td><td>I wish I <b>had studied</b> harder.</td></tr><tr><td>wish + would</td><td>အခြားသူ/အရာတစ်ခု ပြောင်းလဲစေချင်</td><td>I wish it <b>would stop</b> raining.</td></tr></table>
+<p>If only က wish ထက် ခံစားချက်ပိုပြင်းထန်စွာ ဖော်ပြတတ်ပါတယ်။</p></article>
+
+<article class="topic" id="inversion"><span class="pill">Advanced 06 · B2–C1</span><h2>Inversion & Emphasis</h2>
+<p>အလေးပေးဖို့ negative/adverbial expression ကို ဝါကျအစမှာထားတဲ့အခါ auxiliary verb နဲ့ subject အစီအစဉ်ပြောင်းတတ်ပါတယ်။</p>
+<div class="example">Normal: I had never seen such a beautiful place.<br>Inversion: <b>Never had I seen</b> such a beautiful place.<br><br>Normal: She rarely goes out.<br>Inversion: <b>Rarely does she go</b> out.<br><br><b>Not only did</b> he apologise, but he also offered to help.</div>
+<p>အသုံးများသော expression များ — never, rarely, seldom, hardly, no sooner, not until, only then။ Inversion သုံးတဲ့အခါ do/does/did သို့မဟုတ် auxiliary ကို subject ရှေ့ထားပါ။</p></article>
+
+<article class="topic" id="cleft"><span class="pill">Advanced 07 · B2–C1</span><h2>Cleft Sentences (အလေးပေးဝါကျ)</h2>
+<p>ဝါကျထဲက အချက်တစ်ခုကို အထူးအလေးပေးချင်ရင် cleft sentence သုံးပါတယ်။</p>
+<div class="example">I met <b>John</b> yesterday.<br><b>It was John that</b> I met yesterday. (John ကိုအလေးပေး)<br><b>It was yesterday that</b> I met John. (မနေ့ကကိုအလေးပေး)<br><b>What I need is</b> a little more time. (ငါလိုအပ်တာက အချိန်နည်းနည်းပိုရဖို့ပါ)</div></article>
+
+<article class="topic" id="subjunctive"><span class="pill">Advanced 08 · C1</span><h2>Subjunctive & Formal Recommendations</h2>
+<p>Formal English မှာ အကြံပြုခြင်း၊ တောင်းဆိုခြင်း၊ လိုအပ်ကြောင်းပြောခြင်းတို့နောက် that-clause ထဲမှာ base verb ကို သုံးနိုင်ပါတယ်။</p>
+<div class="example">They suggested that he <b>apply</b> for the job.<br>The manager insisted that she <b>be</b> present.<br>It is important that everyone <b>arrive</b> on time.</div>
+<p>ဒီပုံစံမှာ he applies / she is လို့ မပြောင်းဘဲ base form (apply, be, arrive) ကို သုံးတာက formal subjunctive ပုံစံဖြစ်ပါတယ်။ British English မှာ should + V1 ပုံစံလည်းတွေ့ရပါတယ်။</p></article>
+
+<article class="topic" id="advanced-modals"><span class="pill">Advanced 09 · B2</span><h2>Modal Perfects (အတိတ်အပေါ် ခန့်မှန်း/ဝေဖန်)</h2>
+<table><tr><th>ပုံစံ</th><th>အဓိပ္ပာယ်</th><th>ဥပမာ</th></tr>
+<tr><td>must have + V3</td><td>ဖြစ်ခဲ့မယ်လို့ ယုံကြည်စွာခန့်မှန်း</td><td>She must have forgotten.</td></tr>
+<tr><td>might/may have + V3</td><td>ဖြစ်ခဲ့နိုင်တယ်</td><td>He might have missed the bus.</td></tr>
+<tr><td>can't have + V3</td><td>ဖြစ်ခဲ့ဖို့ မဖြစ်နိုင်</td><td>They can't have arrived yet.</td></tr>
+<tr><td>should have + V3</td><td>လုပ်သင့်ခဲ့ပေမယ့် မလုပ်ခဲ့</td><td>You should have called me.</td></tr>
+<tr><td>needn't have + V3</td><td>လုပ်ခဲ့ပေမယ့် မလိုအပ်ခဲ့</td><td>You needn't have bought food.</td></tr></table></article>
+
+<article class="topic" id="discourse"><span class="pill">Advanced 10 · B2–C1</span><h2>Discourse Markers & Academic Linking</h2>
+<p>အဆင့်မြင့်စာရေးခြင်း၊ presentation နဲ့ essay တွေမှာ အတွေးအမြင်အချင်းချင်း ဆက်စပ်ပေးတဲ့ linking adverbs တွေကို သုံးပါတယ်။</p>
+<table><tr><th>ရည်ရွယ်ချက်</th><th>စကားလုံး</th><th>ဥပမာ</th></tr>
+<tr><td>ဆန့်ကျင်</td><td>nevertheless, nonetheless, however</td><td>The task was difficult. Nevertheless, we completed it.</td></tr>
+<tr><td>ရလဒ်</td><td>therefore, consequently, hence</td><td>It was expensive; therefore, we declined.</td></tr>
+<tr><td>ထပ်ဖြည့်</td><td>furthermore, moreover, in addition</td><td>Moreover, the plan saves time.</td></tr>
+<tr><td>နှိုင်းယှဉ်</td><td>whereas, in contrast, conversely</td><td>City life is busy, whereas village life is quieter.</td></tr>
+<tr><td>အလျှော့ပေး</td><td>although, even though, despite, in spite of</td><td>Despite the rain, we continued.</td></tr>
+</table>
+<p><b>Grammar မှတ်ရန်:</b> although + subject + verb; despite + noun / V-ing။ ဥပမာ — Although it rained, we went out. / Despite the rain, we went out.</p></article>
+
+<article class="topic" id="phrasal"><span class="pill">Advanced 11 · B1–C1</span><h2>Phrasal Verbs & Collocations</h2>
+<p><b>Phrasal verb</b> ဆိုတာ verb + particle (up, off, out...) ပေါင်းပြီး အဓိပ္ပာယ်အသစ်ဖြစ်လာတာပါ။ <b>Collocation</b> ဆိုတာ သဘာဝကျကျ တွဲသုံးလေ့ရှိတဲ့ စကားလုံးတွဲပါ။</p>
+<table><tr><th>စကားလုံး</th><th>အဓိပ္ပာယ်</th><th>ဥပမာ</th></tr>
+<tr><td>give up</td><td>လက်လျှော့သည်</td><td>Don't give up learning English.</td></tr>
+<tr><td>look after</td><td>စောင့်ရှောက်သည်</td><td>She looks after her grandmother.</td></tr>
+<tr><td>find out</td><td>စုံစမ်းသိရှိသည်</td><td>I found out the truth.</td></tr>
+<tr><td>put off</td><td>ရွှေ့ဆိုင်းသည်</td><td>They put off the meeting.</td></tr>
+<tr><td>carry on</td><td>ဆက်လုပ်သည်</td><td>Please carry on working.</td></tr>
+</table>
+<h3>အသုံးများသော Collocations</h3>
+<ul><li><b>make</b> a decision / a mistake / progress</li><li><b>do</b> homework / business / your best</li><li><b>take</b> a break / a photo / responsibility</li><li><b>heavy</b> rain / traffic; <b>strong</b> coffee / wind</li></ul>
+<p>စကားလုံးတစ်လုံးချင်းမမှတ်ဘဲ တွဲဖက်အသုံးအနှုန်းအဖြစ် ဥပမာဝါကျနဲ့ မှတ်ပါ။</p></article>
+
+<article class="topic" id="writing-style"><span class="pill">Advanced 12 · C1</span><h2>Formal vs Informal English & Academic Style</h2>
+<table><tr><th>Informal</th><th>Formal / Academic</th></tr>
+<tr><td>Lots of</td><td>a considerable amount of / many</td></tr>
+<tr><td>Find out</td><td>discover / determine</td></tr>
+<tr><td>Put off</td><td>postpone</td></tr>
+<tr><td>Kids</td><td>children</td></tr>
+<tr><td>Get better</td><td>improve</td></tr></table>
+<p><b>Hedging</b> ဆိုတာ အဆိုတစ်ခုကို အလွန်တိကျသေချာတယ်လို့ မပြောဘဲ သတိထားဖော်ပြခြင်းဖြစ်ပါတယ်။</p>
+<div class="example">Strong claim: This method is effective.<br>Hedged: This method <b>appears to be</b> effective. / The results <b>suggest that</b> the method may be effective.</div>
+<p><b>Nominalisation</b> — verb/adjective ကို noun အဖြစ်ပြောင်းပြီး formal style ရေးနိုင်ပါတယ်။ decide → decision; improve → improvement; analyse → analysis.</p></article>
+
+<article class="topic" id="agreement"><span class="pill">Extra · B1–B2</span><h2>Subject–Verb Agreement & Quantifiers</h2>
+<p>Subject နဲ့ verb အရေအတွက်ကိုက်ညီရပါမယ်။ Singular subject နဲ့ present simple verb မှာ အများအားဖြင့် -s/-es ထည့်ပြီး plural subject မှာ မထည့်ပါ။</p>
+<div class="example">The student <b>works</b>. / The students <b>work</b>.<br>Each of the students <b>has</b> a book. (each = singular)<br>Neither answer <b>is</b> correct.</div>
+<table><tr><th>စကားလုံး</th><th>အသုံး</th><th>ဥပမာ</th></tr>
+<tr><td>many / few</td><td>ရေတွက်လို့ရသော plural nouns</td><td>many books; few people</td></tr>
+<tr><td>much / little</td><td>ရေတွက်မရသော nouns</td><td>much water; little time</td></tr>
+<tr><td>some / any</td><td>အချို့/တစ်စုံတစ်ရာ</td><td>some milk; any questions?</td></tr>
+<tr><td>a few / a little</td><td>အနည်းငယ်ရှိ (positive)</td><td>a few friends; a little sugar</td></tr>
+<tr><td>few / little</td><td>မလုံလောက်သလောက်နည်း</td><td>Few people came. / We have little time.</td></tr>
+</table></article>
+
+<article class="topic" id="practice"><span class="pill">Lesson 12 · Test yourself</span><h2>Practice Quiz (လေ့ကျင့်ခန်း)</h2><p>အဖြေမှန်တစ်ခုစီရွေးပြီး “အဖြေစစ်မယ်” ကိုနှိပ်ပါ။</p>
+<div class="quiz">
+<p><b>1. She ___ to school every day.</b></p><label><input type="radio" name="q1" value="a"> go</label><label><input type="radio" name="q1" value="b"> goes</label><label><input type="radio" name="q1" value="c"> going</label>
+<p><b>2. I was born ___ 2001.</b></p><label><input type="radio" name="q2" value="a"> at</label><label><input type="radio" name="q2" value="b"> on</label><label><input type="radio" name="q2" value="c"> in</label>
+<p><b>3. The cat is ___ the table. (စားပွဲအောက်မှာ)</b></p><label><input type="radio" name="q3" value="a"> under</label><label><input type="radio" name="q3" value="b"> between</label><label><input type="radio" name="q3" value="c"> during</label>
+<p><b>4. I was tired, ___ I went to bed.</b></p><label><input type="radio" name="q4" value="a"> because</label><label><input type="radio" name="q4" value="b"> so</label><label><input type="radio" name="q4" value="c"> although</label>
+<p><b>5. You should ___ more water.</b></p><label><input type="radio" name="q5" value="a"> drank</label><label><input type="radio" name="q5" value="b"> drinking</label><label><input type="radio" name="q5" value="c"> drink</label>
+<p><b>6. The room ___ cleaned yesterday.</b></p><label><input type="radio" name="q6" value="a"> was</label><label><input type="radio" name="q6" value="b"> is</label><label><input type="radio" name="q6" value="c"> has</label>
+<button onclick="checkQuiz()">အဖြေစစ်မယ်</button><div class="result" id="result" aria-live="polite"></div>
+</div></article>
+<div class="panel"><h2>လေ့လာနည်းအကြံပြုချက်</h2><ol><li>တစ်နေ့ကို သင်ခန်းစာတစ်ခု သို့မဟုတ် နှစ်ခုသာ သေချာလေ့လာပါ။</li><li>ဥပမာဝါကျတွေကို ကိုယ့်အကြောင်းနဲ့ ပြန်ရေးကြည့်ပါ။</li><li>နေ့တိုင်း ဝါကျ ၅ ကြောင်းရေးပြီး tense နဲ့ preposition ကိုစစ်ပါ။</li><li>Quiz ကို ထပ်ခါထပ်ခါဖြေပြီး မမှန်တဲ့အပိုင်းကို ပြန်ဖတ်ပါ။</li></ol></div>
+</section></main>
+<footer>English Grammar Learning Hub · Beginner to Intermediate (A1–B1)</footer>
+<script>
+document.getElementById('search').addEventListener('input',function(){
+ const q=this.value.toLowerCase();
+ document.querySelectorAll('.topic').forEach(el=>{el.style.display=el.innerText.toLowerCase().includes(q)?'':'none'});
+});
+function checkQuiz(){
+ const answers={q1:'b',q2:'c',q3:'a',q4:'b',q5:'c',q6:'a'};let score=0,done=0;
+ for(const [q,a] of Object.entries(answers)){const chosen=document.querySelector('input[name="'+q+'"]:checked');if(chosen){done++;if(chosen.value===a)score++;}}
+ const r=document.getElementById('result');
+ if(done<6){r.textContent='မေးခွန်း ၆ ခုလုံးကို ဖြေပါဦး။ လက်ရှိဖြေပြီး '+done+' ခုရှိပါပြီ။';return;}
+ r.textContent='သင့်ရမှတ်: '+score+'/6 — '+(score===6?'အရမ်းတော်ပါတယ်! 🎉':score>=4?'ကောင်းပါတယ်။ မမှန်တဲ့အပိုင်းတွေ ပြန်လေ့လာပါ။':'သင်ခန်းစာတွေကို ပြန်ဖတ်ပြီး ထပ်ကြိုးစားပါ။');
+}
+</script>
+</body></html>
